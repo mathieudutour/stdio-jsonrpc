@@ -1,0 +1,17 @@
+{
+  "name": "stdio-jsonrpc",
+  "version": "0.1.0",
+  "description": "JSON RPC throught stdio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "rpc",
+    "jsonrpc",
+    "stdio"
+  ],
+  "author": "Mathieu Dutour",
+  "license": "MIT"
+}
