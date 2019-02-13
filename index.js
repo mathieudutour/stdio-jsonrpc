@@ -83,8 +83,14 @@ function sendError(id, error) {
 
 function handleRaw(data) {
   try {
-    const json = JSON.parse(data)
-    handleRpc(json)
+    data.split('\n').forEach(bunch => {
+      bunch = bunch.trim()
+      if (!bunch) {
+        return
+      }
+      const json = JSON.parse(bunch)
+      handleRpc(json)
+    })
   } catch (err) {
     console.error(err)
     console.error(data)
